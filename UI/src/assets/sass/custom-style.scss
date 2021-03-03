@@ -1,0 +1,21 @@
+.el-table {
+  & > .el-table__body-wrapper {
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.el-picker-panel.el-date-range-picker.el-popper.has-time {
+  .el-picker-panel__footer {
+    .el-button.el-picker-panel__link-btn.el-button--text.el-button--mini {
+      color: #c0c4cc;
+      &:hover {
+        color: #409eff;
+      }
+      .el-button {
+        color: #409eff;
+      }
+    }
+  }
+}

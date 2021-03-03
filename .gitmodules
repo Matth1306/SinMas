@@ -1,0 +1,3 @@
+[submodule "UI/sparingLib"]
+	path = UI/sparingLib
+	url = https://github.com/spin20/sparingLib.git

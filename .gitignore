@@ -1,0 +1,17 @@
+.DS_Store
+UI/node_modules/
+UI/package-lock.json
+UI/yarn.lock
+dist/
+UI/.idea/
+UI/npm-debug.log
+UI/desktop.ini
+
+UI/storybook-static/
+UI/test/unit/coverage/
+BIN/node_modules
+APP/node_modules
+UI/package-lock.json
+UI/yarn.lock
+UI/debug.log
+UI/yarn.lock
