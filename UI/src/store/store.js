@@ -9,8 +9,7 @@ export const store = new Vuex.Store({
   state: {
     userId: "ID01",
     roleId: "hq",
-    tokenId:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTc3YjZkMzdiNDgwMzBmYmNmYzIxNmIiLCJpYXQiOjE2MDc1NzE1NzksImV4cCI6MTYwNzU3NTE3OX0.QgU8nTeKTho6b7Tusf6JEOLQNrQ2j3Z1mRUt8D00ZfM",
+    tokenId: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTc3YjZkMzdiNDgwMzBmYmNmYzIxNmIiLCJpYXQiOjE2MDc1NzE1NzksImV4cCI6MTYwNzU3NTE3OX0.QgU8nTeKTho6b7Tusf6JEOLQNrQ2j3Z1mRUt8D00ZfM",
     listId: null,
     listName: null,
     titleName: null,
@@ -102,10 +101,14 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
-    logout({ commit }) {
+    logout({
+      commit
+    }) {
       commit("clearAuthData");
     },
-    sakSakEJenengOpo({ commit }, authData) {
+    sakSakEJenengOpo({
+      commit
+    }, authData) {
       commit("authUser", {
         user: authData.user,
         role: authData.role,
@@ -113,28 +116,40 @@ export const store = new Vuex.Store({
         name: authData.name
       });
     },
-    tempList({ commit }, listData_) {
+    tempList({
+      commit
+    }, listData_) {
       commit("getListData", {
         list: listData_.list,
         name: listData_.name
       });
     },
-    tempListSecond({ commit }, listDataa_) {
+    tempListSecond({
+      commit
+    }, listDataa_) {
       commit("getListDataSecond", {
         list: listDataa_.list,
         name: listDataa_.name
       });
     },
-    clearListId({ commit }) {
+    clearListId({
+      commit
+    }) {
       commit("clearList");
     },
-    insertDroplistCek({ commit }) {
+    insertDroplistCek({
+      commit
+    }) {
       commit("insertDroplist");
     },
-    removeDroplistCek({ commit }) {
+    removeDroplistCek({
+      commit
+    }) {
       commit("removeDroplist");
     },
-    getTitle({ commit }, titleData_) {
+    getTitle({
+      commit
+    }, titleData_) {
       commit("setTitle", {
         data: titleData_.data
       });

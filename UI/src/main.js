@@ -27,7 +27,9 @@ import "./assets/sass/custom-style.scss";
 import sidebarLinks from "./sidebarLinks";
 import "./registerServiceWorker";
 
-import { store } from "./store/store";
+import {
+  store
+} from "./store/store";
 
 // plugin setup
 Vue.use(VueRouter);
@@ -35,7 +37,9 @@ Vue.use(VueRouterPrefetch);
 Vue.use(GlobalDirectives);
 Vue.use(GlobalComponents);
 Vue.use(VueNotify);
-Vue.use(SideBar, { sidebarLinks: sidebarLinks });
+Vue.use(SideBar, {
+  sidebarLinks: sidebarLinks
+});
 Vue.use(VeeValidate);
 locale.use(lang);
 
@@ -46,9 +50,14 @@ const router = new VueRouter({
   linkActiveClass: "active",
   scrollBehavior: to => {
     if (to.hash) {
-      return { selector: to.hash };
+      return {
+        selector: to.hash
+      };
     } else {
-      return { x: 0, y: 0 };
+      return {
+        x: 0,
+        y: 0
+      };
     }
   }
 });
